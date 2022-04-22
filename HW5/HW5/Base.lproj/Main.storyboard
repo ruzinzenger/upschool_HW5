@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8he-dD-hcL">
+                                <rect key="frame" x="64" y="300" width="286" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZn-JO-7p2">
+                                <rect key="frame" x="184" y="229.5" width="46.5" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="lW5-JD-9qs">
+                                <rect key="frame" x="17" y="405.5" width="380" height="65"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oc-qw-VrQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="DTc-IU-hjo"/>
+                                            <constraint firstAttribute="width" constant="65" id="TON-fN-eNE"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="+">
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="64"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="toplamaTikla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lw2-EX-Ur9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdG-bQ-47j">
+                                        <rect key="frame" x="105" y="0.0" width="65" height="65"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="-">
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="64"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="cikartmaTikla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LIM-hY-tsl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHg-rv-DFr">
+                                        <rect key="frame" x="210" y="0.0" width="65" height="65"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="x">
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="64"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="carpmaTikla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wa2-Le-poB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FI8-vD-jF8">
+                                        <rect key="frame" x="315" y="0.0" width="65" height="65"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="÷">
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="64"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="bolmeTikla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="esR-rA-vWU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Nc-6F-gkD">
+                                <rect key="frame" x="227" y="510.5" width="155" height="71.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Reset">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="50"/>
+                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="enterTikla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QO8-bc-3ho"/>
+                                    <action selector="resetTikla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ivN-xk-Gb9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xB-ns-IvO">
+                                <rect key="frame" x="45" y="151" width="324" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAy-j8-uty">
+                                <rect key="frame" x="32" y="510.5" width="144" height="71.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Enter">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="50"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="enterTikla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OIF-KA-gxj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8he-dD-hcL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="256" id="9YI-r3-K0L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Nc-6F-gkD" secondAttribute="trailing" constant="32" id="AS9-1T-Svf"/>
+                            <constraint firstItem="lW5-JD-9qs" firstAttribute="top" secondItem="8he-dD-hcL" secondAttribute="bottom" constant="48" id="Bz8-i6-OwY"/>
+                            <constraint firstItem="wZn-JO-7p2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LpO-Qb-y1W"/>
+                            <constraint firstItem="wZn-JO-7p2" firstAttribute="top" secondItem="3xB-ns-IvO" secondAttribute="bottom" constant="40" id="OCv-bL-RFN"/>
+                            <constraint firstItem="8he-dD-hcL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="XI3-Oa-7lO"/>
+                            <constraint firstItem="mAy-j8-uty" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="ecK-BD-g9z"/>
+                            <constraint firstItem="mAy-j8-uty" firstAttribute="top" secondItem="lW5-JD-9qs" secondAttribute="bottom" constant="40" id="h4r-Fq-hYr"/>
+                            <constraint firstItem="3xB-ns-IvO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iTf-w8-Sud"/>
+                            <constraint firstItem="1Nc-6F-gkD" firstAttribute="top" secondItem="lW5-JD-9qs" secondAttribute="bottom" constant="40" id="jZQ-ba-Xcv"/>
+                            <constraint firstItem="lW5-JD-9qs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pJ5-FR-DwS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8he-dD-hcL" secondAttribute="trailing" constant="64" id="pUC-UM-PIO"/>
+                            <constraint firstItem="8he-dD-hcL" firstAttribute="top" secondItem="wZn-JO-7p2" secondAttribute="bottom" constant="32" id="qIi-Lz-2zp"/>
+                            <constraint firstItem="3xB-ns-IvO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="zbz-EP-du9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="historyView" destination="3xB-ns-IvO" id="6Oj-DZ-7jY"/>
+                        <outlet property="inputField" destination="8he-dD-hcL" id="kJV-6d-BHb"/>
+                        <outlet property="outputScreen" destination="wZn-JO-7p2" id="uBg-DZ-BlU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
